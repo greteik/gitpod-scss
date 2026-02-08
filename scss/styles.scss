@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import 'mixin', 'normilize';
+@import 'mixin', 'normilize', 'variable';
 
 body {
     font-family: "Roboto", sans-serif;
@@ -73,18 +73,33 @@ body {
         h1 {
             font-size: 80px;
             font-weight: 600;
-            color: $black-color;
         }
 
         p {
             color: rgba(18, 16, 12, 0.7);
-            line-height: 31;
+        }
+
+        &-inner {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+
+            button {
+                background-color: $color-white;
+                padding: 12px 46px;
+                border-radius: 16px;
+
+                a {
+                    color: $color-black;
+                    font-weight: 600;
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .code_images {
+            display: flex;
+            gap: 28px;
         }
     }
-    
-}
-
-.header {
-    display: flex;
-    flex-direction: column;
 }
