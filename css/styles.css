@@ -147,3 +147,29 @@ body {
 .header_button a {
   color: #f9f9f9;
 }
+
+.section_code {
+  margin-bottom: 170px;
+}
+.section_code .code_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.section_code .code_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+}
+.section_code .code_box h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
