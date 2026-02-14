@@ -195,3 +195,93 @@ body {
         text-align: center;
     }
 }
+
+// section developers
+
+.developers {
+    margin-bottom: 150px;
+
+    &_inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &_title {
+        font-size: 32px;
+        color: $color-black;
+    }
+
+    &_text {
+        @include section-text;
+        padding-top: 8px;
+        max-width: 648px;
+    }
+
+    &_row {
+        display: flex;
+        gap: 16px;
+        margin-top: 150px;
+    }
+
+    &_btn-more {
+        background-color: $color-white;
+        padding: 9px 18px;
+        border-radius: 10px;
+
+        a {
+            color: $color-black;
+        }
+    }
+
+    &_btn-doc {
+        background-color: $color-pink;
+        padding: 9px 18px;
+        border-radius: 10px;
+
+        a {
+            color: $color-black;
+        }
+    }
+}
+
+// section design
+
+.design {
+    margin-bottom: 175px;
+    
+    &_title {
+        @include section-title;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    &_text {
+        @include section-text;
+        padding-top: 50px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        max-width: 877px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    &_buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 45px;
+        gap: 16px;
+        margin-top: 50px;
+        
+        button {
+            background-color: #fff;
+            border-radius: 10px;
+            color: $color-black;
+            font-size: 18px;
+        }
+    }
+}

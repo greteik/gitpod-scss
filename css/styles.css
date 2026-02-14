@@ -306,3 +306,91 @@ body {
   font-size: 54px;
   text-align: center;
 }
+
+.developers {
+  margin-bottom: 150px;
+}
+.developers_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.developers_title {
+  font-size: 32px;
+  color: #12100C;
+}
+.developers_text {
+  font-size: 24px;
+  opacity: 70%;
+  padding-top: 8px;
+  max-width: 648px;
+}
+.developers_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  margin-top: 150px;
+}
+.developers_btn-more {
+  background-color: #FFAE33;
+  padding: 9px 18px;
+  border-radius: 10px;
+}
+.developers_btn-more a {
+  color: #12100C;
+}
+.developers_btn-doc {
+  background-color: #FFB0AE;
+  padding: 9px 18px;
+  border-radius: 10px;
+}
+.developers_btn-doc a {
+  color: #12100C;
+}
+
+.design {
+  margin-bottom: 175px;
+}
+.design_title {
+  font-weight: 600;
+  font-size: 54px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.design_text {
+  font-size: 24px;
+  opacity: 70%;
+  padding-top: 50px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 877px;
+}
+.design img {
+  display: block;
+  margin: 0 auto;
+}
+.design_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 45px;
+  gap: 16px;
+  margin-top: 50px;
+}
+.design_buttons button {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #12100C;
+  font-size: 18px;
+}
