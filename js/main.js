@@ -31,3 +31,28 @@ modalBtnReg.addEventListener('click', ()=> {
     loginText.textContent = 'успешный вход!';
 })
 
+
+
+// modal - try
+
+const ModalTry = document.querySelector('.modal_try');
+const ModalTryClose = document.querySelector('.close_btn-try');
+const ModalTryOpen = document.querySelector('.code_box-btn');
+
+function ModalTryFunc() {
+    ModalTryOpen.addEventListener('click', ()=> {
+        ModalTry.classList.add('active');
+    })
+
+    ModalTryClose.addEventListener('click', ()=> {
+        ModalTry.classList.remove('active');
+    })
+
+    ModalTry.addEventListener('click', (f)=> {
+        if (f.target === ModalTry) {
+            ModalTry.classList.remove('active');
+        }
+    })
+}
+
+ModalTryFunc();
