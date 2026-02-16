@@ -6,6 +6,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #12100C;
+    background-color: #F5F3F4;
 }
 
 .test {
@@ -339,5 +340,88 @@ body {
             float: right;
             font-size: 24px;
         }
+    }
+}
+
+// section user
+
+.user {
+    margin-bottom: 160px;
+
+    &_title {
+        @include section-title;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    &_inner {
+        display: flex;
+        gap: 24px;
+        padding: 0 60px 20px 60px;
+        overflow-y: hidden;
+    }
+
+    &_box {
+        background-color: #FFFFFF;
+        border-radius: 15px;
+        flex-shrink: 0;
+        max-width: 500px;
+        padding-right: 25px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-10%);
+        }
+    }
+
+
+    &_box-subtitle {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 20px 20px 0;
+        
+    }
+    
+
+    &_box-text-number {
+        padding: 20px 0 10px 20px;
+    }
+
+    &_box-text {
+        padding: 0 0 14px 20px;
+    }
+
+    &_box-image {
+        display: flex;
+        padding-left: 20px;
+
+        h5 {
+            padding-left: 7px;
+            font-weight: 600;
+        }
+    }
+
+    &_subtitle-link {
+        cursor: pointer;
+        font-weight: 600;
+        color: $color-black;
+    }
+}
+
+// icons
+
+.icons {
+    margin-bottom: 160px;
+
+    &_inner {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        justify-content: center;
+        align-items: center; 
+        max-width: 1200px;                         
+        margin: 0 auto;   
     }
 }

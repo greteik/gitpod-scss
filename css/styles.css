@@ -96,6 +96,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #12100C;
+  background-color: #F5F3F4;
 }
 
 .test {
@@ -450,4 +451,84 @@ body {
   cursor: pointer;
   float: right;
   font-size: 24px;
+}
+
+.user {
+  margin-bottom: 160px;
+}
+.user_title {
+  font-weight: 600;
+  font-size: 54px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.user_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  padding: 0 60px 20px 60px;
+  overflow-y: hidden;
+}
+.user_box {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  max-width: 500px;
+  padding-right: 25px;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.user_box:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+.user_box-subtitle {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px 20px 20px 0;
+}
+.user_box-text-number {
+  padding: 20px 0 10px 20px;
+}
+.user_box-text {
+  padding: 0 0 14px 20px;
+}
+.user_box-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+}
+.user_box-image h5 {
+  padding-left: 7px;
+  font-weight: 600;
+}
+.user_subtitle-link {
+  cursor: pointer;
+  font-weight: 600;
+  color: #12100C;
+}
+
+.icons {
+  margin-bottom: 160px;
+}
+.icons_inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }

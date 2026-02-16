@@ -56,3 +56,23 @@ function ModalTryFunc() {
 }
 
 ModalTryFunc();
+
+const slider = document.querySelector('.user_inner');
+    
+    slider.onmousedown = function(e) {
+        let startX = e.pageX;
+        let scrollLeft = slider.scrollLeft;
+
+        slider.onmousemove = function(e) {
+            let moveX = e.pageX - startX;
+            slider.scrollLeft = scrollLeft - moveX;
+        };
+    };
+    
+    slider.onmouseup = function() {
+        slider.onmousemove = null;
+    };
+    
+    slider.onmouseleave = function() {
+        slider.onmousemove = null;
+    };
