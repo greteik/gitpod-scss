@@ -151,20 +151,83 @@
     </div>
   </div>
 
+
+    <section class="start">
+        <div class="container">
+            <h2 class="start_title">Get started now</h2>
+            <div class="start_inner">
+                <div class="start_box">
+                    <h4 class="start_box-title">Connect Git repository</h4>
+                    <p class="start_box-subtitle">Select a Git provider to start with
+                         an existing project from any Git context.</p>
+                    <div class="start_box-social">
+                        <button class="start_box-buttons-gitlab">Continue with GitLab</button>
+                        <button class="start_box-button-github">Continue with GitHub</button>
+                        <button class="start_box-buttons-bit">Continue with Bitbucket</button>
+                    </div>
+                    <p class="start_box-text">Or prefix any GitLab, GitHub
+                         or Bitbucket URL with</p>
+                    <a href="#" class="start_box-link">gitpod.io/#</a>
+                </div>
+
+                <div class="start_row">
+                    <h4 class="start_row-title">Launch an example workspace</h4>
+                    <p class="start_row-subtitle">Dive into one of our example workspaces</p>
+
+                    <div class="start_row-langue">
+                        <div class="start_row-max" data-icon="node">
+                            <p class="start_row-max-text">Node or TypeScript</p>
+                            <button class="start_row-btn">Launch workspace</button>
+                        </div>
+
+                        <div class="start_row-max" data-icon="python">
+                            <p class="start_row-max-text">Python</p>
+                            <button class="start_row-btn">Launch workspace</button>
+                        </div>
+
+                        <div class="start_row-max" data-icon="go">
+                            <p class="start_row-max-text">go</p>
+                            <button class="start_row-btn">Launch workspace</button>
+                        </div>
+
+                        <div class="start_row-max" data-icon="rust">
+                            <p class="start_row-max-text">Rust</p>
+                            <button class="start_row-btn">Launch workspace</button>
+                        </div>
+
+                        <div class="start_row-max" data-icon="java">
+                            <p class="start_row-max-text">Java</p>
+                            <button class="start_row-btn">Launch workspace</button>
+                        </div>
+
+                        <div class="start_row-max" data-icon="svelte">
+                            <p class="start_row-max-text">Svelte</p>
+                            <button class="start_row-btn">Launch workspace</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
+
+    <footer class="footer">
+        
+    </footer>
 
 
     <div class="modalLogin" id="modalLogin">
     <div class="modal-content"> 
         <span class="close-btn" id="closeModal">&times;</span>
         <h3 class="logintext">войдите или зарегестрируйтесь в аккаунт</h3>
-        <form action="" class="form_login">
-        <input class="formModal" type="text" placeholder="логин: ">
-        <input class="formModal" type="text" placeholder="пароль: ">
+        <form class="form_login" id="regForm">
+            <input type="text" name="log" placeholder="логин" id="login"><br><br>
+            <input type="password" name="pass" placeholder="Пароль" id="pass"><br><br>
+            <span id="errorModal" style="color: red;"></span>
+            <button class="modal-btn" type="submit" id="regBtn">Зарегистрироваться</button>
         </form>
-        <button class="modal-btn">Зарегистрироваться</button>
     </div>
- </div>
+    </div>
 
     <div class="modal_try">
         <div class="modal_try-inner">
@@ -176,5 +239,6 @@
         </div>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/formTelegram.js"></script>
 </body>
 </html>

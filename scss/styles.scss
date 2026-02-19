@@ -425,3 +425,228 @@ body {
         margin: 0 auto;   
     }
 }
+
+// section start
+
+    .start {
+        margin-bottom: 160px;
+
+        &_title {
+            @include section-title;
+            text-align: center;
+            padding-bottom: 48px;
+        }
+
+        &_inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &_box {
+            background-color: $color-f;
+            border-radius: 20px;
+            min-height: 651px;
+            min-width: 642px;
+        }
+
+        &_box-title {
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            padding: 46px 0 8px 0;
+        }
+
+        &_box-subtitle {
+            @include section-text;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 471px;
+            padding-bottom: 60px;
+        }
+
+        &_box-social {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+            align-items: center;
+        }
+
+        &_box-buttons-gitlab {
+            background-color: #FC6D26;
+            color: $color-f;
+            padding: 16px 53px;
+            width: fit-content;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            margin-right: 16px;
+            background-image: url('../images/icon-gitlab.svg'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+    }
+}
+
+        &_box-button-github {
+            background-color: #000;
+            color: $color-f;
+            padding: 16px 53px;
+            width: fit-content;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            margin-right: 16px;
+            background-image: url('../images/github-icon.svg'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+    }
+}
+
+        &_box-buttons-bit {
+            background-color: #2684FF;
+            color: $color-f;
+            padding: 16px 53px;
+            width: fit-content;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 66px;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            margin-right: 7px;
+            background-image: url('../images/bit-icon.svg'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            vertical-align: middle;
+    }
+}
+
+        &_box-text {
+            @include section-text;
+            text-align: center;
+            max-width: 486px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+        }
+
+        &_box-link {
+            background-color: #FFE4BC;
+            @include section-text;
+            border-radius: 12px;
+            padding: 2px 16px;
+            color: $color-black;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        &_row {
+            background-color: $color-f;
+            border-radius: 20px;
+            min-height: 651px;
+            min-width: 642px;
+        }
+
+        &_row-title {
+            font-size: 32px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 56px;
+        }
+
+        &_row-subtitle {
+            @include section-text;
+            text-align: center;
+            padding: 7px 0 32px 0;
+        }
+
+        &_row-langue {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &_row-max:not(:last-child) {
+            padding: 20px 0;
+        }
+
+        &_row-max:last-child {
+            padding: 15px 0 15px 0;
+        }
+
+        &_row-max {
+            display: flex;
+            align-items: center;
+            width: 530px;
+            margin-bottom: 12px;
+            background-color: #F9F9F9;
+            justify-content: space-between;
+
+    
+        &-text::before {
+                content: '';
+                display: inline-block;
+                width: 27px;
+                height: 27px;
+                margin: 0 16px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+        &[data-icon="node"] &-text::before {
+            background-image: url('../images/TypeScript.svg');
+        }
+        
+        &[data-icon="python"] &-text::before {
+            background-image: url('../images/python.svg');
+        }
+        
+        &[data-icon="go"] &-text::before {
+            background-image: url('../images/go.svg');
+        }
+        
+        &[data-icon="rust"] &-text::before {
+            background-image: url('../images/rust.svg');
+        }
+        
+        &[data-icon="java"] &-text::before {
+            background-image: url('../images/java.svg');
+        }
+        
+        &[data-icon="svelte"] &-text::before {
+            background-image: url('../images/svelte.svg');
+        }
+    }
+
+    &_row-btn {
+        background-color: $color-black;
+        padding: 7px 12px;
+        color: $color-f;
+        margin-right: 12px;
+        border-radius: 12px;
+    }
+}

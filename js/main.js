@@ -9,6 +9,7 @@ const openBtn = document.querySelector('.header_button');
 const closeBtn = document.getElementById("closeModal");
 
 // modal
+
 openBtn.addEventListener('click', () => {
     modal.classList.add('active'); 
 });
@@ -23,13 +24,10 @@ modal.addEventListener('click', (e) => {
     }
 });
 
+
+
 const modalBtnReg = document.querySelector('.modal-btn');
 const loginText = document.querySelector('.logintext');
-const formModal = document.querySelectorAll('.formModal');
-
-modalBtnReg.addEventListener('click', ()=> {
-    loginText.textContent = 'успешный вход!';
-})
 
 
 
