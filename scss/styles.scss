@@ -650,3 +650,11 @@ body {
         border-radius: 12px;
     }
 }
+
+// footer
+
+.footer {
+    &_inner {
+        display: flex;
+    }
+}
