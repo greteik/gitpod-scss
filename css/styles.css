@@ -768,3 +768,117 @@ body {
   margin-right: 12px;
   border-radius: 12px;
 }
+
+.footer {
+  background-color: #F9F9F9;
+  padding-top: 47px;
+}
+.footer_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 852px;
+  margin: 0 auto;
+  border-bottom: 2px solid #ECE7E5;
+  padding-bottom: 46px;
+}
+.footer_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+}
+.footer_box h6 {
+  font-size: 13px;
+  color: #12100C;
+  font-weight: 600;
+}
+.footer_box a {
+  font-size: 13px;
+  color: #12100C;
+  opacity: 70%;
+}
+.footer_copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 852px;
+  margin: 0 auto;
+  margin-top: 35px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer_copy-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 16px;
+}
+.footer_cookie {
+  background-color: #ECE7E5;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 12px 16px;
+  -webkit-box-align: self-end;
+      -ms-flex-align: self-end;
+          align-items: self-end;
+}
+.footer_cookie button {
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  padding: 8px 24px;
+}
+.footer_copy-text {
+  font-size: 13px;
+  opacity: 70%;
+}
+.footer_copy-text::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 7px;
+  background-image: url("../images/favicon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+.footer_cookie-text {
+  color: #12100C;
+  opacity: 70%;
+}
+.footer_cookie-text a {
+  padding-right: 6px;
+  opacity: 60%;
+  text-decoration: underline;
+  color: #12100C;
+}
+
+.footer_cookie-btn:hover {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.footer_cookie-btn {
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer_cookie-btn.active {
+  display: none;
+}

@@ -74,3 +74,15 @@ const slider = document.querySelector('.user_inner');
     slider.onmouseleave = function() {
         slider.onmousemove = null;
     };
+
+// cookie remove    
+
+const CookieBtn = document.querySelector('.footer_cookie-btn');
+
+if (CookieBtn) {
+    CookieBtn.addEventListener('click', () => {
+        setTimeout(() => {
+            CookieBtn.classList.add('active'); 
+        }, 300);
+    });
+}
