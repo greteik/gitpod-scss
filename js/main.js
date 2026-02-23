@@ -79,6 +79,17 @@ const slider = document.querySelector('.user_inner');
 
 const CookieBtn = document.querySelector('.footer_cookie-btn');
 
+CookieBtn.addEventListener('click', ()=> {
+    const result = confirm('примите file cookie');
+
+    if(result == false) {
+        alert('ладно');
+    }
+    else if(result == true) {
+        alert('молодец');
+    }
+})
+
 if (CookieBtn) {
     CookieBtn.addEventListener('click', () => {
         setTimeout(() => {
@@ -86,3 +97,4 @@ if (CookieBtn) {
         }, 300);
     });
 }
+

@@ -27,6 +27,7 @@ if(form) {
             errorSpan.innerHTML = "некорректный пароль!";
             return;
         }
+
         errorSpan.innerHTML = "";
         modalBtnReg.innerHTML = 'Отправка данных';
         
