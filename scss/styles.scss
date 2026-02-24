@@ -756,3 +756,53 @@ body {
 .footer_cookie-btn.active {
     display: none;
 }
+
+// adaptivities
+
+
+@media(max-width: 950px) {
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+        z-index: 100;
+    }
+
+    .burger-menu span {
+        width: 26px;
+        height: 4px;
+        background-color: #000;
+        transition: 0.3s;
+    }
+
+    .header_nav-list {
+        position: fixed;  
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        gap: 20px;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease;
+        z-index: 90;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .header_nav-list.active {
+        transform: translateY(0);
+    }
+
+    .header_nav-link {
+        color: #12100C;
+        font-size: 18px;
+        text-decoration: none;
+    }
+}
