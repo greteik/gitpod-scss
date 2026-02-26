@@ -103,8 +103,6 @@ if (CookieBtn) {
 const menuBtn = document.querySelector('.burger-menu');
 const headerNav = document.querySelector('.header_nav-list'); 
 
-if (menuBtn && headerNav) {
-    menuBtn.addEventListener('click', () => {
-        headerNav.classList.toggle('active');  
-    });
-}
+menuBtn.addEventListener('click', () => {
+    headerNav.classList.toggle('active');  
+});
